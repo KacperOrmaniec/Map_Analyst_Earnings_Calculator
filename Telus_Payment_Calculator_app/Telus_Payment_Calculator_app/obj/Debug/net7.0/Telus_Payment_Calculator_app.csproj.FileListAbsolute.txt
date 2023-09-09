@@ -1,0 +1,15 @@
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/bin/Debug/net7.0/Telus_Payment_Calculator_app
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/bin/Debug/net7.0/Telus_Payment_Calculator_app.deps.json
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/bin/Debug/net7.0/Telus_Payment_Calculator_app.runtimeconfig.json
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/bin/Debug/net7.0/Telus_Payment_Calculator_app.dll
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/bin/Debug/net7.0/Telus_Payment_Calculator_app.pdb
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/Telus_Payment_Calculator_app.csproj.AssemblyReference.cache
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/Telus_Payment_Calculator_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/Telus_Payment_Calculator_app.AssemblyInfoInputs.cache
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/Telus_Payment_Calculator_app.AssemblyInfo.cs
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/Telus_Payment_Calculator_app.csproj.CoreCompileInputs.cache
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/Telus_Payment_Calculator_app.dll
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/refint/Telus_Payment_Calculator_app.dll
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/Telus_Payment_Calculator_app.pdb
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/Telus_Payment_Calculator_app.genruntimeconfig.cache
+/Users/kacperormaniec/Desktop/Telus_Payment_Calculator_app/obj/Debug/net7.0/ref/Telus_Payment_Calculator_app.dll
