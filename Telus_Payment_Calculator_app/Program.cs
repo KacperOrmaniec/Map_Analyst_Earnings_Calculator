@@ -44,7 +44,7 @@ internal class Program
                         string? subMenuSelection = "";
 
                         Console.WriteLine("\nPlease choose task type:\n1. Search2.0\n2. Name Evaluation\n3. POI Evaluation\n4. Autocomplete");
-                        Console.WriteLine("5. Search SBS\n6. Address Verification\n7. Search Ads Close Variants\n8. POI with Corrections (2 Pins)");
+                        Console.WriteLine("5. Search SBS\n6. Address Verification\n7. Search Ads Close Variants\n8. POI with Corrections (2 Pins)\n9. Contextual Image Label");
                         typeSelection = Console.ReadLine();
 
                         switch (typeSelection)
@@ -144,7 +144,18 @@ internal class Program
                                     typeSelection = "exit";
                                 }
 
-                                break;   
+                                break;  
+                            case "9":
+                                totalEarnings += Bridges3DCount();
+                                
+                                Console.WriteLine("\nWould you like to add another task type?\n1. Yes\n2. No");
+                                subMenuSelection = Console.ReadLine();
+                                if (subMenuSelection == "2")
+                                {
+                                    typeSelection = "exit";
+                                }
+                                
+                                break;
                         }
                     } while (typeSelection != "exit");
                     string decimalTotalEarnings = String.Format("{0:0.00}", totalEarnings);
@@ -171,19 +182,21 @@ internal class Program
 
         // Defining POI Evaluation task rates in usd (The example rates are for polish locale)
         double POIEvaluation_120_rate =0.274;
+        double POIEvaluation_150_rate =0.343;
         double POIEvaluation_330_rate =0.754;
         double POIEvaluation_345_rate =0.788;
         double POIEvaluation_375_rate =0.856;
+        double POIEvaluation_390_rate =0.891;
         double POIEvaluation_420_rate =0.959;
 
         double[] POIEvaluationTasksRates =
         {
-            POIEvaluation_120_rate, POIEvaluation_330_rate, POIEvaluation_345_rate, 
-            POIEvaluation_375_rate, POIEvaluation_420_rate
+            POIEvaluation_120_rate, POIEvaluation_150_rate, POIEvaluation_330_rate, POIEvaluation_345_rate, 
+            POIEvaluation_375_rate, POIEvaluation_390_rate, POIEvaluation_420_rate
         };
 
         string? userInput = "";
-        int[] taskCount = new int[5];
+        int[] taskCount = new int[7];
         int val = 0;
 
         Console.WriteLine("Insert POI Evaluation 120 seconds task count:");
@@ -202,7 +215,23 @@ internal class Program
         }
         val++;
 
+        Console.WriteLine("Insert POI Evaluation 150 seconds task count:");
 
+        userInput = Console.ReadLine();
+
+
+        if (userInput != "")
+        {
+            taskCount[val] = Convert.ToInt32(userInput);
+        }
+
+        else
+        {
+            taskCount[val] = 0;
+        }
+        val++;
+
+        
         Console.WriteLine("Insert POI Evaluation 330 seconds task count:");
 
         userInput = Console.ReadLine();
@@ -254,6 +283,23 @@ internal class Program
         val++;
 
         
+        Console.WriteLine("Insert POI Evaluation 390 seconds task count:");
+
+        userInput = Console.ReadLine();
+
+
+        if (userInput != "")
+        {
+            taskCount[val] = Convert.ToInt32(userInput);
+        }
+
+        else
+        {
+            taskCount[val] = 0;
+        }
+        val++;
+
+
         Console.WriteLine("Insert POI Evaluation 420 seconds task count:");
 
         userInput = Console.ReadLine();
@@ -273,7 +319,7 @@ internal class Program
         
         // POI Evaluation earnings count
 
-        for (int i = 0; i < 1; i++)
+        for (int i = 0; i < 6; i++)
         {
             product = taskCount[i] * POIEvaluationTasksRates[i];
             earnings += product;
@@ -1359,5 +1405,40 @@ internal class Program
         }
         return earnings;
     }    
+    static double Bridges3DCount()
+    {
+        // Variables for counting earnings
+        double earnings = 0;
+        double product = 0.00;
+
+        double Bridges3DTaskRate = 0.685;
+        string? userInput = "";
+        int[] taskCount = new int[1];
+        int val = 0;
+
+        Console.WriteLine("Insert Bridges3D task count:");
+        userInput = Console.ReadLine();
+
+
+        if (userInput != "")
+        {
+            taskCount[val] = Convert.ToInt32(userInput);
+        }
+
+        else
+        {
+            taskCount[val] = 0;
+        }
+        val++;
+
+        // 3D Bridges earnings count
+
+        for (int i = 0; i < 1; i++)
+        {
+            product = taskCount[i] * Bridges3DTaskRate;
+            earnings += product;
+        }
+        return earnings;
+    }
     }
 }
